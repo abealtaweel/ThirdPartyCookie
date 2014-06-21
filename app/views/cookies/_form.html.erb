@@ -1,14 +1,14 @@
 <img src="/assets/bunny-cat.jpg"/>
 <script type="text/javascript">
+    $(document).ready(function() { 
+        setCookie(30);
+    });
 
-$(document).ready(function() { 
-  setCookie(30);
-});
-function setCookie(exdays){
-  var d = new Date();
-  d.setTime(d.getTime()+(exdays*24*60*60*1000));
-  var expires="expires="+d.toGMTString();
-  document.cookie="image"+"="+"bunny-cat.jpg"+";"+expires;
-}
+    function setCookie(exdays){
+        var d = new Date();
+        d.setTime(d.getTime()+(exdays*24*60*60*1000));
+        var expires="expires="+d.toGMTString();
+        document.cookie="image"+"="+"bunny-cat.jpg"+";"+expires;
+    }
 
 </script>
